@@ -12,6 +12,7 @@ apply
 display
 #clear the edge matrix, test the sphere
 clear
+
 sphere
 0 0 0 200
 save
