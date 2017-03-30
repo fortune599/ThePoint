@@ -13,9 +13,11 @@ def add_box( points, x, y, z, width, height, depth ):
     add_edge(points, x+width, y+height, z-depth, x+width+1, y+height+1, z-depth+1);
 
 def add_sphere( points, cx, cy, cz, r, step ):
-    generate_sphere( points, cx, cy, cz, r, step )
+    sphere = []
+    generate_sphere(sphere, cx, cy, cz, r, step)
+    print_matrix(sphere)
+    points.extend(sphere)
 
-#add vs generate?
 def generate_sphere( points, cx, cy, cz, r, step ):
     t1 = step
     t2 = step
